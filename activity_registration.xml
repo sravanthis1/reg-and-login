@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Registration"
+    android:background="@drawable/ne"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+//Describe the layout and style for the text//
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="262dp"
+        android:layout_height="50dp"
+        android:shadowColor="#40C4FF"
+        android:text="ENTER YOUR DETAILS"
+        android:textColor="#9C1F1F"
+        android:textColorHighlight="#FFFF00"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="37dp" />
+//Describe the attributes for the text *FIRSTNAME*//
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="160dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
+        android:text="FIRST NAME"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/fn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1" />
+    //Describe the attributes for the text *LASTNAME*//
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="160dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="25dp"
+        android:text="LAST NAME"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/ln"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/t2"
+        app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+    <EditText
+        android:id="@+id/fn"
+        android:layout_width="198dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/t2"
+        app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+    <EditText
+        android:id="@+id/ln"
+        android:layout_width="198dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/address"
+        app:layout_constraintStart_toStartOf="@+id/fn"
+        app:layout_constraintTop_toBottomOf="@+id/fn" />
+    //Describe the attributes for the text *ADDRESS*//
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="160dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="DATE OF BIRTH"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/address"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/t3"
+        app:layout_constraintTop_toBottomOf="@+id/t3" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="198dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ln"
+        app:layout_constraintTop_toBottomOf="@+id/ln" />
+    //Describe the attributes for the text *EMAIL*//
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="160dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="EMAIL"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/t4"
+        app:layout_constraintTop_toBottomOf="@+id/t4" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="198dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/t5"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+    //Describe the attributes for the text *PASSWORD*//
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="160dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="PASSWORD"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t5" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="198dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/t6"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/btn.reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:layout_marginTop="129dp"
+        android:layout_marginBottom="197dp"
+        android:text="register"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout >

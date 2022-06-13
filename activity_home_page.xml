@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8C9721"
+    android:backgroundTint="#0B1233"
+    tools:context=".Home_page">
+    //Specify the constraints and style for button 'login'
+    <Button
+        android:id="@+id/btn.login"
+        android:layout_width="231dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="216dp"
+        android:background="@color/teal_200"
+        android:backgroundTint="#00BCD4"
+        android:text="login"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@color/teal_200" />
+    //Specify the constraints and style for button 'Register'
+    <Button
+        android:id="@+id/btn.register"
+        android:layout_width="231dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#00BCD4"
+        android:background="@color/teal_200"
+        android:fontFamily="sans-serif-medium"
+        android:text="register"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn.login"
+        app:layout_constraintVertical_bias="0.163" />
+
+</androidx.constraintlayout.widget.ConstraintLayout >
